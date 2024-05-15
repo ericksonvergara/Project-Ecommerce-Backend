@@ -1,7 +1,7 @@
 package com.linktic.ecommerce.backend.infrastructure.mapper;
 
 import com.linktic.ecommerce.backend.domain.model.Product;
-import com.linktic.ecommerce.backend.infrastructure.ProductEntity;
+import com.linktic.ecommerce.backend.infrastructure.entity.ProductEntity;
 import org.mapstruct.InheritInverseConfiguration;
 import org.mapstruct.Mapper;
 import org.mapstruct.Mapping;

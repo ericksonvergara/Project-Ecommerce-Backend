@@ -1,7 +1,7 @@
 package com.linktic.ecommerce.backend.infrastructure.mapper;
 
 import com.linktic.ecommerce.backend.domain.model.Category;
-import com.linktic.ecommerce.backend.infrastructure.CategoryEntity;
+import com.linktic.ecommerce.backend.infrastructure.entity.CategoryEntity;
 import org.mapstruct.InheritInverseConfiguration;
 import org.mapstruct.Mapper;
 import org.mapstruct.Mapping;
@@ -14,7 +14,7 @@ public interface CategoryMapper {
                     @Mapping(source = "id", target = "id"),
                     @Mapping(source = "name", target = "name"),
                     @Mapping(source = "dateCreated", target = "dateCreated"),
-                    @Mapping(source = "dateUpdated", target = "dateUpdated"),
+                    @Mapping(source = "dateUpdated", target = "dateUpdated")
             }
     )
     Category toCategory(CategoryEntity categoryEntity);

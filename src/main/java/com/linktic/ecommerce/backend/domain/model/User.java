@@ -16,8 +16,8 @@ public class User {
     private String email;
     private String address;
     private String cellphone;
-    private String passsword;
+    private String password;
     private UserType userType;
     private LocalDateTime dateCreated;
-    private LocalDateTime dateUpdate;
+    private LocalDateTime dateUpdated;
 }
