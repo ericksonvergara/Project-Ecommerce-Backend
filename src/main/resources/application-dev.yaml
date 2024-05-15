@@ -1,0 +1,19 @@
+server:
+  port: 8081
+spring:
+  datasource:
+    password: admin
+    url: jdbc:postgresql://localhost:5432/ecommerce
+    username: postgres
+  jpa:
+    database: POSTGRESQL
+    generate-ddl: true
+    hibernate:
+      ddl-auto:update
+    show-sql: true
+  sql:
+    init:
+      platform: postgres
+  main:
+    allow-bean-definition-overriding: true
+
