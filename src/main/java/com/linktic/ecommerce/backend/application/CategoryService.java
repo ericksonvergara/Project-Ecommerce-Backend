@@ -3,9 +3,11 @@ package com.linktic.ecommerce.backend.application;
 import com.linktic.ecommerce.backend.domain.model.Category;
 import com.linktic.ecommerce.backend.domain.port.ICategoryRepository;
 import lombok.AllArgsConstructor;
-import lombok.NoArgsConstructor;
+import lombok.RequiredArgsConstructor;
+import org.springframework.stereotype.Repository;
 
-@AllArgsConstructor
+
+@RequiredArgsConstructor
 public class CategoryService {
     private final ICategoryRepository iCategoryRepository;
 

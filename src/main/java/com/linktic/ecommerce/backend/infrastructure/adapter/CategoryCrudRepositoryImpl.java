@@ -5,7 +5,11 @@ import com.linktic.ecommerce.backend.domain.port.ICategoryRepository;
 import com.linktic.ecommerce.backend.infrastructure.mapper.CategoryMapper;
 import lombok.AllArgsConstructor;
 import lombok.NoArgsConstructor;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
+import org.springframework.stereotype.Repository;
 
+@Repository
 @AllArgsConstructor
 public class CategoryCrudRepositoryImpl implements ICategoryRepository {
     private final ICategoryCrudRepository iCategoryCrudRepository;

@@ -1,8 +1,9 @@
 package com.linktic.ecommerce.backend.infrastructure.config;
 
-import com.linktic.ecommerce.backend.application.CategoryService;
-import com.linktic.ecommerce.backend.application.UserService;
+import com.linktic.ecommerce.backend.application.*;
 import com.linktic.ecommerce.backend.domain.port.ICategoryRepository;
+import com.linktic.ecommerce.backend.domain.port.IOrderRepository;
+import com.linktic.ecommerce.backend.domain.port.IProductRepository;
 import com.linktic.ecommerce.backend.domain.port.IUserRepository;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -16,5 +17,17 @@ public class BeanConfiguration {
     @Bean
     public CategoryService categoryService(ICategoryRepository iCategoryRepository){
         return new CategoryService(iCategoryRepository);
+    }
+    @Bean
+    public ProductService productService(IProductRepository iProductRepository){
+        return new ProductService(iProductRepository);
+    }
+    @Bean
+    public OrderService orderService(IOrderRepository iOrderRepository){
+        return new OrderService(iOrderRepository);
+    }
+    @Bean
+    public RegistrationService registrationService(IUserRepository iUserRepository){
+        return new RegistrationService(iUserRepository);
     }
 }
